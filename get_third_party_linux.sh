@@ -14,6 +14,11 @@ get_file() {
 set -x
 curl -v -u openmatrixthirdparty:EfWb[RMP2GuRs^LHfna4 --disable-eprt -O "ftp://ftp2.altair.com/%2foutgoing/$1"
 set +x
+if [ ! -e $1 ]; then
+    echo File $1 is not found
+    return 1
+fi
+
 if tar xfz $1; then
     echo All is good, archive $1 extracted >&2
 else
@@ -30,6 +35,7 @@ set +x
 #xfile=third_party_linux.tar.gz
 
 xfile=smallfile.tar.gz
+
 
 if tar xfz $xfile; then
     echo All is good, archive $xfile extracted >&2
