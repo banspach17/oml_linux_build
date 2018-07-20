@@ -13,7 +13,9 @@
 get_file() {
 set -x
 #curl -v -u openmatrixthirdparty:EfWb[RMP2GuRs^LHfna4 --disable-eprt -O "ftp://ftp2.altair.com/%2foutgoing/$1"
-curl -v -u openmatrixthirdparty:EfWb[RMP2GuRs^LHfna4 --disable-epsv -O "ftp://ftp2.altair.com/%2foutgoing/$1"
+#curl -v -u openmatrixthirdparty:EfWb[RMP2GuRs^LHfna4 --disable-epsv -O "ftp://ftp2.altair.com/%2foutgoing/$1"
+curl -v -u openmatrixthirdparty:EfWb[RMP2GuRs^LHfna4 --disable-epsv -P -O "ftp://ftp2.altair.com/%2foutgoing/$1"
+#67.59.59.26
 set +x
 if [ ! -e $1 ]; then
     echo File $1 is not found
