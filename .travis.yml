@@ -38,13 +38,13 @@ script:
 after_success:
 #- chmod 777 $OML_ROOT/src/bin/linux64/omlconsole
 - ls -alF $OML_ROOT/src/bin/linux64
-#- cd $OML_ROOT/Tests/RegressionTests && pwd
-#- perl ../regressOMLConsole.pl -travis
-#- cd $OML_ROOT/Tests
-#- source run_toolbox_tests.sh
-#- cd $OML_ROOT/Tests
-#- ls -alF ..
-#- ls -alF ../..
-#- ls -alF ../../..
-#- source ../../evaluate_test_results.sh
+- cd $OML_ROOT/Tests/RegressionTests && pwd
+- perl ../regressOMLConsole.pl -travis
+- cd $OML_ROOT/Tests
+- source run_toolbox_tests.sh
+- cd $OML_ROOT/Tests
+- ls -alF ..
+- ls -alF ../..
+- ls -alF ../../..
+- source ../../evaluate_test_results.sh
 compiler: gcc
