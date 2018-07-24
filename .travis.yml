@@ -43,5 +43,5 @@ after_success:
 - cd $OML_ROOT/Tests
 - source run_toolbox_tests.sh
 - cd $OML_ROOT/Tests
-- source evaluate_test_results.sh
+- source ../../evaluate_test_results.sh
 compiler: gcc
