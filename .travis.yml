@@ -8,9 +8,9 @@ python:
 - '3.6'
 before_install:
 - echo Running before_install
-- git clone --depth=50 --branch=master https://github.com/OpenMatrixLanguage/OpenMatrix.git OpenMatrixPublic
-- git clone --depth=50 --branch=master https://github.com/OpenMatrixLanguage/Continuous_Integration_Linux.git Linux
-- curl -v -O http://www.netlib.org/lapack/lapack-3.7.1.tgz
+#- git clone --depth=50 --branch=master https://github.com/OpenMatrixLanguage/OpenMatrix.git OpenMatrixPublic
+#- git clone --depth=50 --branch=master https://github.com/OpenMatrixLanguage/Continuous_Integration_Linux.git Linux
+#- curl -v -O http://www.netlib.org/lapack/lapack-3.7.1.tgz
 env:
   SH=bash
   OML_ROOT=$PWD/OpenMatrixPublic
